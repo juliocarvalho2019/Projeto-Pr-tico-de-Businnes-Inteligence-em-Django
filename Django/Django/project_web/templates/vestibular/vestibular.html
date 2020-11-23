@@ -1,0 +1,15 @@
+{% extends 'admin/app_index.html' %}
+{% block branding %}
+<h1 id="site-name"><a href="#">APP-VESTIBULAR</a></h1>
+{% endblock %}
+{% block content %}
+<h1>Aplicativo de Gestão de Vestibulares</h1>
+<div style="clear: both;">
+ 
+<div>
+ <h2>{{ vestibular.cpf }}</h2>
+ <p>{{ vestibular.sexo }}</p>
+</div>
+</div>
+<br /><br /><br />
+{% endblock %}
