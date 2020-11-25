@@ -29,8 +29,6 @@
         <div class="inner">
           <h1 class="text-primary">PROJETO PRATICO DE BUSINNES INTELIGENCE</h1>
           <nav class="nav nav-masthead justify-content-center">
-            <!-- <a class="nav-link active" href="/">Início</a> -->
-            <!-- <a class="nav-link" href="/admin">Login</a> -->
             
             <form class="form-inline" method="post" novalidate>
             {% csrf_token %}
@@ -43,7 +41,7 @@
 {%if img%}
       <main role="main" class="inner cover">
         <div class="my-3 p-3 bg-white rounded box-shadow">
-          <h1 class="text-primary">Gráficos</h1>
+          <h1 class="text-primary">Representação Gráfica</h1>
           <div class="media text-muted pt-3">
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
@@ -78,7 +76,7 @@
         </div>
         {%endif%}
         <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h1 class="text-primary">{{column}}</h1>
+        <h1 class="text-primary">Representação da Tabela {{column}}</h1>
         <div class="media text-muted pt-3">
           <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
           <table class="table table-striped">
@@ -107,41 +105,6 @@
 </table>
         </div>
       </div>
-      <!-- <div class="my-3 p-3 bg-white rounded box-shadow">
-        <h1 class="text-primary">Gráficos</h1>
-        <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <div class="d-flex justify-content-between align-items-center w-100">
-              <strong class="text-gray-dark"></strong>
-              <a></a>
-            </div>
-            <span class="d-block"><img src="data:image/png;base64,{{data}}" class="img-fluid" alt="Imagem responsiva"></span>
-          </div>
-        </div>
-        {% if len%}
-        <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <div class="d-flex justify-content-between align-items-center w-100">
-              <strong class="text-gray-dark"></strong>
-              <a></a>
-            </div>
-            <span class="d-block"><img src="data:image/png;base64,{{data2}}" class="img-fluid" alt="Imagem responsiva"></span>
-          </div>
-        </div>
-        <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-          <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <div class="d-flex justify-content-between align-items-center w-100">
-              <strong class="text-bg-darkk"></strong>
-              <a></a>
-            </div>
-            <span class="d-block"><img src="data:image/png;base64,{{data3}}" class="img-fluid" alt="Imagem responsiva"></span>
-          </div>
-        </div>
-      </div>
-      {%endif%} -->
       </main>
 {%else%}
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-primary">
@@ -155,7 +118,6 @@
 {%endif%}
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <!-- <p class="fixed-side text-primary">FAI - Centro Superior de Gestão, Tecnologia e Educação</a>, Feito: <a>João Vitor Teixeira, Júlio César Carvalho e Mateus José Barbosa</a>.</p> -->
           <a class="nav-link active" href="/">Voltar</a>
         </div>
       </footer>
